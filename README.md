@@ -5,6 +5,6 @@ Développement web -
 <br>
 **Genre**: Action, Absurde
 <br>
-**inspiration**: sans objet
+**inspiration**: 'sans objet'
 <br>
 **pallette de couleur**:
