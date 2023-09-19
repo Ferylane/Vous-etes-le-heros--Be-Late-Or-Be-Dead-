@@ -3,8 +3,8 @@
 Développement web -
 [Projet vous etes le hero](https://smnarnold.com/projets/vous-etes-le-heros/repo-github)
 <br>
-Genre: Action, Absurde
+<b>Genre</b>: Action, Absurde
 <br>
-inspiration:
+<b>inspiration</b>:
 <br>
-pallette de couleur:
+<b>pallette de couleur</b>:
