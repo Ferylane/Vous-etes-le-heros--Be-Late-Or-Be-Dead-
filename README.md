@@ -8,4 +8,5 @@
 <br>
 **pallette de couleur**:[colors.co](https://coolors.co/882727-eb1414-3c4fe0-5468ff-89e5ff-ffffff)
 <br>
+# Diagramme
 ![shemas.png](https://github.com/Ferylane/Vous-etes-le-heros--Be-Late-Or-Be-Late-/blob/main/images/shemas.png)
