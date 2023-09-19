@@ -1,0 +1,215 @@
+<mxfile host="65bd71144e">
+    <diagram id="VE0LgDuzzJI6HdZe8Z8s" name="Page-1">
+        <mxGraphModel dx="2346" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="27" value="&lt;font style=&quot;&quot; color=&quot;#000000&quot;&gt;&amp;nbsp; Genre: action, absurde&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Inspiration: un gars qui arrive tout le temps&lt;br&gt;&amp;nbsp;en retard dans ma classe.&lt;br&gt;Nom: Be late or be dead&lt;br&gt;&amp;nbsp; &amp;nbsp; Palette:&lt;br&gt;Couleur de fond du site:&amp;nbsp;&lt;span style=&quot;font-family: proxima-soft, &amp;quot;Proxima Soft&amp;quot;, &amp;quot;Proxima Nova Soft&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.4px; text-align: start; text-transform: uppercase;&quot;&gt;#EB1414&lt;/span&gt;&lt;br&gt;Couleur de fond du contenu:&amp;nbsp;&lt;span style=&quot;font-family: proxima-soft, &amp;quot;Proxima Soft&amp;quot;, &amp;quot;Proxima Nova Soft&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.4px; text-align: start; text-transform: uppercase;&quot;&gt;#882727&lt;/span&gt;&lt;br&gt;Couleur de la police:&amp;nbsp;&lt;span style=&quot;font-family: proxima-soft, &amp;quot;Proxima Soft&amp;quot;, &amp;quot;Proxima Nova Soft&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.4px; text-align: start; text-transform: uppercase;&quot;&gt;#FFFFFF&lt;/span&gt;&lt;br&gt;Couleur de fond des boutons:&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;#89E5FF&lt;/font&gt;&lt;/b&gt;,&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;#5468FF&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Couleur de fond des bouton en hover:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(209, 154, 102); background-color: rgb(40, 44, 52); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;#3c4fe0&lt;/span&gt;&lt;font style=&quot;&quot; color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Couleur de la police des boutons: &lt;font face=&quot;proxima-soft, Proxima Soft, Proxima Nova Soft, Helvetica, Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 16px; letter-spacing: 0.4px; text-transform: uppercase;&quot;&gt;&lt;b&gt;#ffffff&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;font style=&quot;&quot; color=&quot;#000000&quot;&gt;Couleur de la police des boutons en hover:&amp;nbsp;&lt;/font&gt;&lt;b style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;#89E5FF&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;,&lt;/span&gt;&lt;b style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;#5468FF&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" width="390" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="28" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="reveiller en retard" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="220" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;" parent="1" source="29" target="30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="430" y="370"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="oui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="31" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3718" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;non&lt;/font&gt;&lt;/span&gt;" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="29" target="50" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="dejeuner?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="330" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=none;html=1;" parent="1" source="30" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="vous etes sortie dehors,vous voyer un monsieur qui cherche ses cles de voiture" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="oui" style="edgeStyle=none;html=1;" parent="1" source="37" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="non" style="edgeStyle=none;html=1;" parent="1" source="37" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="l'aider?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="330" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="edgeStyle=none;html=1;" parent="1" source="39" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="il vous propose de vous amener a votre ecole dans sa voiture pour aller plus vite" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="43" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1060" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="il vous amene dans une cave et vous tue&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="oui" style="edgeStyle=none;html=1;" parent="1" source="46" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="non" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="46" target="53" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="volez le velo &lt;br&gt;d'une petite fille" style="rhombus;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="500" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="47" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1050" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1160" y="560"/>
+                            <mxPoint x="1160" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="elle sort un pistolet silencieux et vous tue sans trace" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="530" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="marcher" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="50" target="60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="autobus" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="50" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="par quel &lt;br&gt;moyen aller vous a l'ecole" style="rhombus;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="465" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="autobus" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="53" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="850" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="autobus ou&lt;br&gt;marche" style="rhombus;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="650" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="55" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1160" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1230" y="692"/>
+                            <mxPoint x="1230" y="540"/>
+                            <mxPoint x="1160" y="540"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="vous arriver devant l'ecole mais vous etes en retard, les portes des classes son deja fermer" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="1070" y="657.5" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="58" target="69" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="vous ariver a l'ecole avec une minute sur le chrono&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="850" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="courir" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="60" target="62" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="marcher" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="60" target="76" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="quel vitesse" style="rhombus;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="840" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="62" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1230" y="680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="pas de dejeuner&lt;br&gt;=&lt;br&gt;pas d'energie" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="707" y="810" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="63" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1230" y="830" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="vous etes trop lent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="repondre" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="69" target="71" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="pas repondre" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="69" target="73" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="un ami appelle" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="950" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="avec votre ami vous secher les cours et avez plusieurs enfants" style="whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="1070" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="vous devenez le prochain albert einstein&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="1070" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="non" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="76" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="avez vous manger ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="910" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="78" target="85" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;L'autobus arive dans 15min mais&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;vous aller ariver plus vite que en marchant&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;donc c'est un gros risque a prendre&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="620" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="marcher a la place" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="85" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="oui" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="85" target="58" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="continuer?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="715" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="93" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;L'autobus arive dans 5min mais&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;vous aller ariver plus vite que en marchant&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;donc c'est un gros risque a prendre&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="655" width="160" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="oui" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="93" target="55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="marcher a la place" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="93" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="820" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1010" y="760"/>
+                            <mxPoint x="570" y="760"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="continuer?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="652.5" width="80" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
