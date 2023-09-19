@@ -7,4 +7,4 @@ Développement web -
 <br>
 **inspiration**: sans objet
 <br>
-**pallette de couleur**:
+**pallette de couleur**:[colors.co](https://coolors.co/882727-eb1414-3c4fe0-5468ff-89e5ff-ffffff)
