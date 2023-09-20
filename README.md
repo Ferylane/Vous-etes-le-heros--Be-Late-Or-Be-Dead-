@@ -1,6 +1,6 @@
 # Be Late Or Be Dead
 <br>
-[Développement web -Projet vous etes le hero](https://smnarnold.com/projets/vous-etes-le-heros/repo-github)
+[Développement web -Projet vous etes le hero](https://smnarnold.com/projets/vous-etes-le-heros)
 <br>
 **Genre**: Action, Absurde
 <br>
