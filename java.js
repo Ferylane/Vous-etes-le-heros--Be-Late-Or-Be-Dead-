@@ -121,18 +121,20 @@ chapters = {
             {titre: '', 'destination': ''} 
         ];
     },
+    therock: {
+        'pourquoi mentez vous?',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
+        image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fthe-rocks-eyebrow-raise&psig=AOvVaw2LTASFVz6CHVom-1cyPBiU&ust=1695871473788000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiOstfryYEDFQAAAAAdAAAAABAE',
+    },
     pasdenergie: {
         'vous avez pas denergie',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
-    therock: {
-        'pourquoi mentez vous?',
-        boutons : [ 
-            {titre: '', 'destination': ''} 
-        ];
-    }, 
+     
 };
 
 function goToChapter(chapter){
