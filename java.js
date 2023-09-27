@@ -1,12 +1,12 @@
 chapters = {
     reveil: {
-        'reveil',
+        titre; 'reveil',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     dejeuner: {
-        'moyen de transport',
+        titre: 'moyen de transport',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -14,7 +14,7 @@ chapters = {
         ];
     },
     transport: {
-        'moyen de transport',
+        titre: 'moyen de transport',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -22,7 +22,7 @@ chapters = {
         ];
     },
     continuer: {
-        'continuer?',
+        titre: 'continuer?',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -30,7 +30,7 @@ chapters = {
         ];
     },
     appel: {
-        'vous recevez un appelle',
+        titre: 'vous recevez un appelle',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -38,19 +38,19 @@ chapters = {
         ];
     },
     einstein: {
-        'bravo',
+        titre: 'bravo',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     enfant: {
-        'tout mes felicitations',
+        titre: 'tout mes felicitations',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     voiture: {
-        'rencontre innatendue',
+        titre: 'rencontre innatendue',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -58,13 +58,13 @@ chapters = {
         ];
     },
     cave: {
-        'Vous etes mort',
+        titre: 'Vous etes mort',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     velo: {
-        'deuxieme rencontre innatendue',
+        titre; 'deuxieme rencontre innatendue',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -72,13 +72,13 @@ chapters = {
         ];
     },
     pistolet: {
-        'Vous etes mort',
+        titre: 'Vous etes mort',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     transport2: {
-        'moyen de transport',
+        titre: 'moyen de transport',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -86,7 +86,7 @@ chapters = {
         ];
     },
     continuer2: {
-        'continuer?',
+        titre: 'continuer?',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -94,13 +94,13 @@ chapters = {
         ];
     },
     retard: {
-        'Vous arriver en retard',
+        titre: 'Vous arriver en retard',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     vitesse: {
-        'a quelle vitesse',
+        titre: 'a quelle vitesse',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -108,13 +108,13 @@ chapters = {
         ];
     },
     lenteur:{
-        'vous etes trop lent',
+        titre: 'vous etes trop lent',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
     },
     manger: {
-        'avez vous manger?',
+        titre: 'avez vous manger?',
         boutons : [ 
             {titre: '', 'destination': ''}, 
           
@@ -129,7 +129,7 @@ chapters = {
         image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fthe-rocks-eyebrow-raise&psig=AOvVaw2LTASFVz6CHVom-1cyPBiU&ust=1695871473788000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiOstfryYEDFQAAAAAdAAAAABAE',
     },
     pasdenergie: {
-        'vous avez pas denergie',
+        titre: 'vous avez pas denergie',
         boutons : [ 
             {titre: '', 'destination': ''} 
         ];
