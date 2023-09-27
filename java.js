@@ -1,58 +1,138 @@
 chapters = {
     reveil: {
-        'reveil'
+        'reveil',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
+    },
+    dejeuner: {
+        'moyen de transport',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     transport: {
-        'moyen de transport'
+        'moyen de transport',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     continuer: {
-        'continuer?'
+        'continuer?',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     appel: {
-        'vous recevez un appelle'
+        'vous recevez un appelle',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     einstein: {
-        'bravo'
+        'bravo',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
     enfant: {
-        'tout mes felicitations'
+        'tout mes felicitations',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
     voiture: {
-        'rencontre innatendue'
+        'rencontre innatendue',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     cave: {
-        'Vous etes mort'
+        'Vous etes mort',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
     velo: {
-        'deuxieme rencontre innatendue'
+        'deuxieme rencontre innatendue',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     pistolet: {
-        'Vous etes mort'
+        'Vous etes mort',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
     transport2: {
-        'moyen de transport'
+        'moyen de transport',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     continuer2: {
-        'continuer?'
+        'continuer?',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     retard: {
-        'Vous arriver en retard'
+        'Vous arriver en retard',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
     vitesse: {
-        'a quelle vitesse'
-    },
-    pasDenergie: {
-        'vous avez pas denergie'
-    },
-    manger: {
-        'avez vous manger?'
-    },
-    theRock: {
-        'pourquoi mentez vous?'
+        'a quelle vitesse',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
     },
     lenteur:{
-        'vous etes trop lent'
+        'vous etes trop lent',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
     },
+    manger: {
+        'avez vous manger?',
+        boutons : [ 
+            {titre: '', 'destination': ''}, 
+          
+            {titre: '', 'destination': ''} 
+        ];
+    },
+    pasdenergie: {
+        'vous avez pas denergie',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
+    },
+    therock: {
+        'pourquoi mentez vous?',
+        boutons : [ 
+            {titre: '', 'destination': ''} 
+        ];
+    }, 
 };
 
 function goToChapter(chapter){
