@@ -1,4 +1,4 @@
-chapters = {
+let chapters = {
     reveil: {
         titre: 'reveil',
         boutons : [ 
@@ -141,7 +141,7 @@ function goToChapter(chapter) {
     if (chapters[chapter] !== undefined){
         console.log(`$(chapters[chapter].titre) \n $(chapters[chapter].description)`);
         for (let i in chapters[chapter].boutons) {
-            console.log($(chapters[chapter].boutons[i].titre) \nClé : $(chapters[chapter].boutons[i].destination));
+            console.log($(chapters[chapter].boutons[i].titre) + 'Clé :' +  $(chapters[chapter].boutons[i].destination));
         };
     }
     else {
