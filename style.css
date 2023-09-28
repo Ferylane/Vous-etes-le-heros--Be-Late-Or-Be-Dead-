@@ -18,17 +18,18 @@ body {
 }
 
 #jeu{
-    display: flex;
+    position: absolute;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     padding: 20px;
     background-color:#882727 ;
-    width:80vmin;
-    height: 90vh;
-    /*top: 50%;
+    width:600px;
+    height: 630px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
     box-shadow: 0 0 300px;
 }
 
@@ -172,7 +173,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    margin-top: 10px;
     width: 100%;
     
 }
