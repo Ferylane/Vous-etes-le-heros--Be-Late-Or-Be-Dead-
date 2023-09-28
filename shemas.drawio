@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="VE0LgDuzzJI6HdZe8Z8s" name="Page-1">
-        <mxGraphModel dx="2472" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+        <mxGraphModel dx="1118" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -101,11 +101,12 @@
                         <mxPoint x="850" y="760" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="102" value="marche" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="53">
+                <mxCell id="102" value="marche" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="53" edge="1" target="62">
                     <mxGeometry x="-0.3833" relative="1" as="geometry">
                         <mxPoint x="570" y="730" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="690"/>
+                            <mxPoint x="700" y="760"/>
+                            <mxPoint x="767" y="760"/>
                         </Array>
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -168,7 +169,7 @@
                 <mxCell id="69" value="un ami appelle" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="330" y="950" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="105" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="71" target="28">
+                <mxCell id="105" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="71" target="28" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="480" y="1150"/>
@@ -180,7 +181,7 @@
                 <mxCell id="71" value="avec votre ami vous secher les cours et avez plusieurs enfants" style="whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="420" y="1070" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="104" value="recommencer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="73">
+                <mxCell id="104" value="recommencer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="73" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="310" y="250" as="targetPoint"/>
                         <Array as="points">
@@ -195,7 +196,7 @@
                 <mxCell id="77" value="non" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="76" target="63" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="99" value="oui" style="edgeStyle=none;html=1;" edge="1" parent="1" source="76" target="98">
+                <mxCell id="99" value="oui" style="edgeStyle=none;html=1;" parent="1" source="76" target="98" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" value="avez vous manger ?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
@@ -227,29 +228,28 @@
                 <mxCell id="96" value="oui" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="93" target="55" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="97" value="marcher a la place" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="93" edge="1">
+                <mxCell id="97" value="marcher a la place" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="93" edge="1" target="62">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="570" y="820" as="targetPoint"/>
                         <Array as="points">
                             <mxPoint x="1010" y="760"/>
-                            <mxPoint x="570" y="760"/>
+                            <mxPoint x="767" y="760"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="93" value="continuer?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="970" y="652.5" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="100" value="continuez" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="98">
+                <mxCell id="100" value="continuez" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="98" edge="1" target="63">
                     <mxGeometry x="-0.2132" relative="1" as="geometry">
                         <mxPoint x="1230" y="940" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1230" y="1080"/>
-                            <mxPoint x="1230" y="950"/>
+                            <mxPoint x="860" y="1080"/>
                         </Array>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="98" value="pourquoi&amp;nbsp; vous mentez?" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="98" value="pourquoi&amp;nbsp; vous mentez?" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="640" y="1050" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
