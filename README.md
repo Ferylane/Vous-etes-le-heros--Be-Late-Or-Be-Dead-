@@ -2,7 +2,7 @@
 
 [Développement web - Projet vous etes le hero](https://smnarnold.com/projets/vous-etes-le-heros)
 
-**Genre**: Action, Absurde
+**Genre**: Action, Absurde, humoristique
 
 **inspiration**: sans objet
 
