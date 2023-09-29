@@ -1,14 +1,14 @@
 let chapters = {
     reveil: {
-        titre: 'reveil',
+        titre: 'Reveil',
         description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
-        image: '',
+        image: './',
         boutons : [ 
             {titre: 'continuer', 'destination': 'dejeuner'} 
         ]
     },
     dejeuner: {
-        titre: 'dejeuner',
+        titre: 'Dejeuner',
         description: 'Vous descendez les escaliers et à votre surprise, votre mère ne vous a pas préparé de déjeuner. Elle a reçu un appel de la NASA pour partir vers le soleil. Allez-vous vous préparer un déjeuner ?',
         image: '',
         boutons : [ 
@@ -42,7 +42,7 @@ let chapters = {
         description: 'Vous êtes arrivé à l\'école quelques secondes avant que les portes se ferment. Soudainement, vous ressentez une vibration dans votre poche. Votre ami vous appelle. Que faites-vous ?',
         image: '',
         boutons : [ 
-            {titre: 'reondre', 'destination': 'enfants'}, 
+            {titre: 'reondre', 'destination': 'enfant'}, 
           
             {titre: 'pas repondre', 'destination': 'einstein'} 
         ]
@@ -55,7 +55,7 @@ let chapters = {
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
     },
-    enfants: {
+    enfant: {
         titre: 'Tout mes felicitations',
         description: 'Vous avez répondu à l\'appel et votre ami vous a déclaré sa flamme. Ensuite, vous avez eu des enfants et avez vécu heureux jusqu\'à la fin de vos jours.',
         image: '',
