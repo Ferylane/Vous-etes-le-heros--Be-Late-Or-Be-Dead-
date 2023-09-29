@@ -2,15 +2,15 @@ let chapters = {
     reveil: {
         titre: 'Reveil',
         description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
-        image: './',
+        image: './images/reveil.jpg',
         boutons : [ 
             {titre: 'continuer', 'destination': 'dejeuner'} 
         ]
     },
     dejeuner: {
-        titre: 'Dejeuner',
+        titre: 'dejeuner',
         description: 'Vous descendez les escaliers et à votre surprise, votre mère ne vous a pas préparé de déjeuner. Elle a reçu un appel de la NASA pour partir vers le soleil. Allez-vous vous préparer un déjeuner ?',
-        image: '',
+        image: './images/dejeuner.jpg',
         boutons : [ 
             {titre: 'Oui', 'destination': 'voiture'}, 
           
@@ -20,7 +20,7 @@ let chapters = {
     transport: {
         titre: 'moyen de transport',
         description: 'Vous préparez vos effets scolaires et vous vous demandez quel moyen de transport choisir pour aller à l\'école.',
-        image: '',
+        image: './images/autobus_ou_marche.jpg',
         boutons : [ 
             {titre: 'marcher', 'destination': 'vitesse'}, 
           
@@ -30,7 +30,7 @@ let chapters = {
     continuer: {
         titre: 'continuer?',
         description: 'L\'autobus arrive dans 15 minutes, mais vous pourriez arriver plus vite en marchant. Cependant, c\'est un gros risque à prendre.',
-        image: '',
+        image: './images/continuer.jpeg',
         boutons : [ 
             {titre: 'marcher a la place', 'destination': 'vitesse'}, 
           
@@ -40,7 +40,7 @@ let chapters = {
     appel: {
         titre: 'vous recevez un appelle',
         description: 'Vous êtes arrivé à l\'école quelques secondes avant que les portes se ferment. Soudainement, vous ressentez une vibration dans votre poche. Votre ami vous appelle. Que faites-vous ?',
-        image: '',
+        image: './images/appel.jpeg',
         boutons : [ 
             {titre: 'reondre', 'destination': 'enfant'}, 
           
@@ -50,7 +50,7 @@ let chapters = {
     einstein: {
         titre: 'bravo',
         description: 'Vous n\'avez pas répondu, ce qui vous a permis de franchir les portes de l\'école. Grâce à cette action, dans le futur, vous devenez le prochain Albert Einstein de notre génération',
-        image: '',
+        image: './images/einstein.jpg',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -58,7 +58,7 @@ let chapters = {
     enfant: {
         titre: 'Tout mes felicitations',
         description: 'Vous avez répondu à l\'appel et votre ami vous a déclaré sa flamme. Ensuite, vous avez eu des enfants et avez vécu heureux jusqu\'à la fin de vos jours.',
-        image: '',
+        image: './images/enfant.jpg',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -66,7 +66,7 @@ let chapters = {
     voiture: {
         titre: 'rencontre innatendue',
         description: 'Vous avez bien mangé, vous êtes en pleine forme. Vous sortez de la maison et voyez un vieux monsieur qui cherche ses clés de voiture mais ne les trouve pas. Allez-vous l\'aider ?',
-        image: '',
+        image: './images/voiture.jpg',
         boutons : [ 
             {titre: 'Oui', 'destination': 'cave'}, 
           
@@ -76,7 +76,7 @@ let chapters = {
     cave: {
         titre: 'Vous etes mort',
         description: 'Vous retrouvez ses clés et pour vous remercier, il vous dit qu\'il va vous amener à l\'école. Cependant, il vous conduit dans une cave où il mène des expériences sur des humains et vous finissez par mourir.',
-        image: '',
+        image: './images/cave.jpg',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -84,7 +84,7 @@ let chapters = {
     velo: {
         titre: 'deuxieme rencontre innatendue',
         description: 'Vous marchez un peu plus loin et voyez une petite fille sur un vélo. Décidez-vous de le voler pour aller plus vite à l\'école ?',
-        image: '',
+        image: './images/velo.jpg',
         boutons : [ 
             {titre: 'Oui', 'destination': 'pistolet'}, 
           
@@ -94,7 +94,7 @@ let chapters = {
     pistolet: {
         titre: 'Vous etes mort',
         description: 'La petite fille était une espionne russe. Elle sort un pistolet silencieux et vous tire une balle dans la tête, puis nettoie la scène de crime à la perfection',
-        image: '',
+        image: './images/pistolet.jpg',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -102,7 +102,7 @@ let chapters = {
     transport2: {
         titre: 'moyen de transport',
         description: 'Après toutes ses aventures, vous vous interrogez sur le choix du moyen de transport pour aller à l\'école.',
-        image: '',
+        image: './images/autobus_ou_marche.jpg',
         boutons : [ 
             {titre: 'autobus', 'destination': 'continuer2'}, 
           
@@ -112,7 +112,7 @@ let chapters = {
     continuer2: {
         titre: 'continuer?',
         description: 'L\'autobus arrive dans 10 minutes, mais vous pourriez arriver plus vite en marchant. Cependant, c\'est un gros risque à prendre compte tenu du temps qu\'il vous reste.',
-        image: '',
+        image: './images/continuer.jpeg',
         boutons : [ 
             {titre: 'oui', 'destination': 'retard'}, 
           
@@ -122,7 +122,7 @@ let chapters = {
     retard: {
         titre: 'Vous arriver en retard',
         description: 'Vous arrivez en retard, les portes des classes se ferment. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
-        image: '',
+        image: './images/retard.webp',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -130,7 +130,7 @@ let chapters = {
     vitesse: {
         titre: 'a quelle vitesse',
         description: 'Vous avez décidé de marcher, mais à quelle vitesse ?',
-        image: '',
+        image: './images/vitesse.jpg',
         boutons : [ 
             {titre: 'marcher', 'destination': 'lenteur'}, 
           
@@ -140,7 +140,7 @@ let chapters = {
     lenteur:{
         titre: 'vous etes trop lent',
         description: 'Vous êtes trop lent, vous arrivez en retard, les portes des classes se sont fermées. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
-        image: '',
+        image: './images/retard.webp',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
@@ -148,7 +148,7 @@ let chapters = {
     manger: {
         titre: 'avez vous manger?',
         description: 'Pour courir, il faut avoir de l\'énergie.',
-        image: '',
+        image: './images/manger.png',
         boutons : [ 
             {titre: 'non', 'destination': 'pasdenergie'}, 
           
@@ -158,7 +158,7 @@ let chapters = {
     therock: {
         titre: 'pourquoi mentez vous?',
         description: 'Vous n\'avez pas déjeuné ! Ne faites pas semblant.',
-        image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fthe-rocks-eyebrow-raise&psig=AOvVaw2LTASFVz6CHVom-1cyPBiU&ust=1695871473788000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiOstfryYEDFQAAAAAdAAAAABAE',
+        image: './images/therock.jpg',
         boutons : [ 
             {titre: 'continuer', 'destination': 'pasdenergie'} 
         ]  
@@ -166,7 +166,7 @@ let chapters = {
     pasdenergie: {
         titre: 'vous avez pas denergie',
         description: 'Vous n\'avez pas mangé, ce qui fait que vous n\'avez aucune énergie pour courir, donc vous arrivez en retard.',
-        image: '',
+        image: './images/retard.webp',
         boutons : [ 
             {titre: 'recommencer', 'destination': 'reveil'} 
         ]
