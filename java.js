@@ -1,7 +1,7 @@
 let chapters = {
     reveil: {
         titre: 'reveil',
-        description: 'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
+        description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
         image: '',
         boutons : [ 
             {titre: 'continuer', 'destination': 'dejeuner'} 
@@ -176,9 +176,9 @@ let chapters = {
 
 function goToChapter(chapter) {
     if (chapters[chapter] !== undefined){
-        console.log(`$(chapters[chapter].titre) \n $(chapters[chapter].description)`);
+        console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         for (let i in chapters[chapter].boutons) {
-            console.log($(chapters[chapter].boutons[i].titre) + 'Clé :' +  $(chapters[chapter].boutons[i].destination));
+            console.log(`${chapters[chapter].boutons[i].titre} \ntapez goToChapter('${chapters[chapter].boutons[i].destination}') `);
         };
     }
     else {
