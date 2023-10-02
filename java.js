@@ -179,7 +179,7 @@ let imgN = document.querySelector('img');
 let boutonN = document.querySelector('.boutons');
 
 function goToChapter(chapter) {
-    if (chapters[chapter] !== undefined){ 
+    if (chapters[chapter]){ 
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         titreN.textContent = chapters[chapter].titre;
         textN.textContent = chapters[chapter].description;
