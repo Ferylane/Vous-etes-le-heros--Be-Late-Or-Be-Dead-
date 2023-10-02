@@ -179,10 +179,12 @@ let imgN = document.querySelector('img');
 let boutonN = document.querySelector('.boutons');
 
 function goToChapter(chapter) {
-    if (chapters[chapter] !== undefined){
+    if (chapters[chapter] !== undefined){ 
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         titreN.textContent = chapters[chapter].titre;
         textN.textContent = chapters[chapter].description;
+        imgN.src = chapters[chapter].image;
+        boutonN.textContent = chapters[chapter].boutons[i];
         /*for (let i = 0; i < chapters[chapter].boutons.length; i++) { 
             // on crée un nouveau bouton 
             const nouveauBtn = document.createElement('button'); 
@@ -203,12 +205,12 @@ function goToChapter(chapter) {
         while (boutons.firstChild) { 
         boutons.removeChild(boutons.firstChild); 
         } 
-        // Pour chaque boutons ...*/ 
+        // Pour chaque boutons ...*/
         
     }
     else {
         console.log('Mauvaise clé.');
-    } ;
+    };
 };
 
 goToChapter('reveil');
