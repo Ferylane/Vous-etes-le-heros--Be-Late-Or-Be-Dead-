@@ -180,6 +180,27 @@ function goToChapter(chapter) {
         for (let i in chapters[chapter].boutons) {
             console.log(`${chapters[chapter].boutons[i].titre} \ntapez goToChapter('${chapters[chapter].boutons[i].destination}') `);
         };
+        // Sélectionne le div .boutons 
+
+const boutons = document.querySelector('.boutons'); 
+// Supprime tous les boutons enfants du div .boutons 
+while (boutons.firstChild) { 
+  boutons.removeChild(boutons.firstChild); 
+} 
+// Pour chaque boutons ... 
+for (let i = 0; i < chapitre.boutons.length; i++) { 
+  // on crée un nouveau bouton 
+  const nouveauBtn = document.createElement('button'); 
+  // on applique un libellé au bouton 
+  nouveauBtn.textContent = chapitre.boutons[i].titre; 
+  // on appele goToChapter lorsqu'on clique le bouton 
+  nouveauBtn.addEventListener('click', () => { 
+    // la destination, c'est la destination du bouton! 
+    goToChapter(chapitre.boutons[i].destination) 
+  }); 
+  // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
+  boutons.appendChild(nouveauBtn); 
+}; 
     }
     else {
         console.log('Mauvaise clé.');
@@ -187,3 +208,14 @@ function goToChapter(chapter) {
 };
 
 goToChapter('reveil');
+
+ 
+let titreN = document.querySelector('h1');
+let textN = document.querySelector('p');
+let imgN = document.querySelector('img');
+let boutonN = document.querySelector('.boutons');
+
+boutonN.addEventListener('click'){
+
+}
+
