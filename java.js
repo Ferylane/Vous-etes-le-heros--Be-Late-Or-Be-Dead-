@@ -180,9 +180,8 @@ let boutonN = document.querySelector('.boutons');
 
 function goToChapter(chapter) {
     if (chapters[chapter]){ 
-        console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
-        titreN.textContent = chapters[chapter].titre;
-        textN.textContent = chapters[chapter].description;
+        titreN.innerHTML = chapters[chapter].titre;
+        textN.innerHTML = chapters[chapter].description;
         imgN.src = chapters[chapter].image;
         boutonN.textContent = chapters[chapter].boutons[i];
         /*for (let i = 0; i < chapters[chapter].boutons.length; i++) { 
