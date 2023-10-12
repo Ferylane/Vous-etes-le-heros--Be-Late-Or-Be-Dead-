@@ -173,17 +173,17 @@ let chapters = {
     },
      
 };
-let titreN = document.querySelector('.titre');
-let textN = document.querySelector('.text');
-let imgN = document.querySelector('img');
-let boutonN = document.querySelector('.boutons');
+const titreN = document.querySelector('.titre');
+const textN = document.querySelector('.text');
+const imgN = document.querySelector('img');
+const boutonN = document.querySelector('.boutons');
 
 function goToChapter(chapter) {
-    if (chapters[chapter]){ 
-        titreN.innerHTML = chapters[chapter].titre;
-        textN.innerHTML = chapters[chapter].description;
-        imgN.src = chapters[chapter].image;
-        boutonN.textContent = chapters[chapter].boutons[i];
+    if (chapters[chapter] !== undefined){ 
+        titreN.textContent = (chapters[chapter].titre);
+        textN.textContent = (chapters[chapter].description);
+        imgN.src = (chapters[chapter].image);
+        console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         /*for (let i = 0; i < chapters[chapter].boutons.length; i++) { 
             // on crée un nouveau bouton 
             const nouveauBtn = document.createElement('button'); 
