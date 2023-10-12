@@ -1,4 +1,4 @@
-let chapters = {
+const chapters = {
     reveil: {
         titre: 'Reveil',
         description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
