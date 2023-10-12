@@ -175,7 +175,7 @@ const chapters = {
 };
 const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
-const imgN = document.querySelector('img');
+const imgN = document.querySelector('.img');
 const boutonN = document.querySelector('.boutons');
 
 function goToChapter(chapter) {
