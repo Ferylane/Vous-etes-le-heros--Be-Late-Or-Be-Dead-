@@ -137,7 +137,7 @@ img {
     transform: translateY(-2px);
 }
 
-.bouton-3{
+.boutons-3{
     width: 100px;
     height: 50px;
     border-radius: 5px;
@@ -163,7 +163,7 @@ img {
     
 }
 
-.bouton-3:hover{
+.boutons-3:hover{
     box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
     transform: translateY(-2px);
     

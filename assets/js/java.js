@@ -211,9 +211,3 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
 };
 
 goToChapter('reveil');
-
- 
-
-
-
-
