@@ -71,7 +71,7 @@ img {
   }
 
   @font-face {
-    src: url("./assets/polices/Merriweather-Regular.ttf") format("truetype");
+    src: url("assets/polices/Merriweather-Regular.ttf") format("truetype");
     font-family: "Merriweather";
   }
 
