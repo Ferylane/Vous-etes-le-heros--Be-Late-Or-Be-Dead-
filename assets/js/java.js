@@ -20,7 +20,7 @@ const chapters = {
     transport: {
         titre: 'moyen de transport',
         description: 'Vous préparez vos effets scolaires et vous vous demandez quel moyen de transport choisir pour aller à l\'école.',
-        image: './assets/images/autobus_ou_marche.jpg',
+        image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
             {titre: 'marcher', destination: 'vitesse'}, 
           
@@ -58,7 +58,7 @@ const chapters = {
     enfant: {
         titre: 'Tout mes felicitations',
         description: 'Vous avez répondu à l\'appel et votre ami vous a déclaré sa flamme. Ensuite, vous avez eu des enfants et avez vécu heureux jusqu\'à la fin de vos jours.',
-        image: './assets/images/enfant.jpg',
+        image: './assets/images/enfants.jpg',
         boutons : [ 
             {titre: 'recommencer', destination: 'reveil'} 
         ]
@@ -102,7 +102,7 @@ const chapters = {
     transport2: {
         titre: 'moyen de transport',
         description: 'Après toutes ses aventures, vous vous interrogez sur le choix du moyen de transport pour aller à l\'école.',
-        image: './assets/images/autobus_ou_marche.jpg',
+        image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
             {titre: 'autobus', destination: 'continuer2'}, 
           
