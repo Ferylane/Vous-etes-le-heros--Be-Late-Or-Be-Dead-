@@ -42,7 +42,7 @@ const chapters = {
         description: 'Vous êtes arrivé à l\'école quelques secondes avant que les portes se ferment. Soudainement, vous ressentez une vibration dans votre poche. Votre ami vous appelle. Que faites-vous ?',
         image: './assets/images/appel.jpeg',
         boutons : [ 
-            {titre: 'reondre', destination: 'enfant'}, 
+            {titre: 'repondre', destination: 'enfant'}, 
           
             {titre: 'pas repondre', destination: 'einstein'} 
         ]
