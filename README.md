@@ -10,4 +10,4 @@
 
 # Diagramme
 
-![shemas.png](https://github.com/Ferylane/Vous-etes-le-heros--Be-Late-Or-Be-Late-/blob/main/images/shemas.png)
+![shemas.png](https://github.com/Ferylane/Vous-etes-le-heros--Be-Late-Or-Be-Late-/blob/main/assets/drawio/shemas.png)
