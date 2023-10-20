@@ -49,6 +49,7 @@ body {
     color: #FFFFFF;
     font-size: 40px;
     font-family:'Merriweather' ;
+    text-align: center;
 }
 
 .text{
@@ -62,11 +63,14 @@ body {
 }
 
 img {
+    position: absolute;
+    bottom: 110px;
     display: flex;
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
     width: 500px;
+    height: 300px;
 }
   @font-face {
     src: url("../polices/Road_Rage.otf") format("opentype");
@@ -172,7 +176,7 @@ img {
 
 .boutons{
     position: absolute;
-    bottom: 10px;
+    bottom: 17px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

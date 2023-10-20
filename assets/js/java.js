@@ -1,14 +1,14 @@
 const chapters = {
     reveil: {
-        titre: 'Reveil',
+        titre: 'Réveil',
         description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
         image: './assets/images/reveil.jpg',
         boutons : [ 
-            {titre: 'continuer', destination: 'dejeuner'} 
+            {titre: 'Continuer', destination: 'dejeuner'} 
         ]
     },
     dejeuner: {
-        titre: 'dejeuner',
+        titre: 'Déjeuner',
         description: 'Vous descendez les escaliers et à votre surprise, votre mère ne vous a pas préparé de déjeuner. Elle a reçu un appel de la NASA pour partir vers le soleil. Allez-vous vous préparer un déjeuner ?',
         image: './assets/images/dejeuner.jpg',
         boutons : [ 
@@ -18,53 +18,53 @@ const chapters = {
         ]
     },
     transport: {
-        titre: 'moyen de transport',
+        titre: 'Moyen de transport',
         description: 'Vous préparez vos effets scolaires et vous vous demandez quel moyen de transport choisir pour aller à l\'école.',
         image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
-            {titre: 'marcher', destination: 'vitesse'}, 
+            {titre: 'Marcher', destination: 'vitesse'}, 
           
-            {titre: 'autobus', destination: 'continuer'} 
+            {titre: 'Autobus', destination: 'continuer'} 
         ]
     },
     continuer: {
-        titre: 'continuer?',
+        titre: 'Continuer?',
         description: 'L\'autobus arrive dans 15 minutes, mais vous pourriez arriver plus vite en marchant. Cependant, c\'est un gros risque à prendre.',
         image: './assets/images/continuer.jpeg',
         boutons : [ 
-            {titre: 'marcher a la place', destination: 'vitesse'}, 
+            {titre: 'Marcher a la place', destination: 'vitesse'}, 
           
-            {titre: 'oui', destination: 'appel'} 
+            {titre: 'Oui', destination: 'appel'} 
         ]
     },
     appel: {
-        titre: 'vous recevez un appelle',
+        titre: 'Vous recevez un appel',
         description: 'Vous êtes arrivé à l\'école quelques secondes avant que les portes se ferment. Soudainement, vous ressentez une vibration dans votre poche. Votre ami vous appelle. Que faites-vous ?',
         image: './assets/images/appel.jpeg',
         boutons : [ 
-            {titre: 'repondre', destination: 'enfant'}, 
+            {titre: 'Répondre', destination: 'enfant'}, 
           
-            {titre: 'pas repondre', destination: 'einstein'} 
+            {titre: 'Pas répondre', destination: 'einstein'} 
         ]
     },
     einstein: {
-        titre: 'bravo',
+        titre: 'Bravo',
         description: 'Vous n\'avez pas répondu, ce qui vous a permis de franchir les portes de l\'école. Grâce à cette action, dans le futur, vous devenez le prochain Albert Einstein de notre génération',
         image: './assets/images/einstein.jpg',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     enfant: {
-        titre: 'Tout mes felicitations',
+        titre: 'Toute mes félicitations',
         description: 'Vous avez répondu à l\'appel et votre ami vous a déclaré sa flamme. Ensuite, vous avez eu des enfants et avez vécu heureux jusqu\'à la fin de vos jours.',
         image: './assets/images/enfants.jpg',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     voiture: {
-        titre: 'rencontre innatendue',
+        titre: 'Rencontre innatendue',
         description: 'Vous avez bien mangé, vous êtes en pleine forme. Vous sortez de la maison et voyez un vieux monsieur qui cherche ses clés de voiture mais ne les trouve pas. Allez-vous l\'aider ?',
         image: './assets/images/voiture.jpg',
         boutons : [ 
@@ -74,15 +74,15 @@ const chapters = {
         ]
     },
     cave: {
-        titre: 'Vous etes mort',
+        titre: 'Vous êtes mort',
         description: 'Vous retrouvez ses clés et pour vous remercier, il vous dit qu\'il va vous amener à l\'école. Cependant, il vous conduit dans une cave où il mène des expériences sur des humains et vous finissez par mourir.',
         image: './assets/images/cave.jpg',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     velo: {
-        titre: 'deuxieme rencontre innatendue',
+        titre: 'Rencontre innatendue 2',
         description: 'Vous marchez un peu plus loin et voyez une petite fille sur un vélo. Décidez-vous de le voler pour aller plus vite à l\'école ?',
         image: './assets/images/velo.jpg',
         boutons : [ 
@@ -92,31 +92,31 @@ const chapters = {
         ]
     },
     pistolet: {
-        titre: 'Vous etes mort',
+        titre: 'Vous êtes mort',
         description: 'La petite fille était une espionne russe. Elle sort un pistolet silencieux et vous tire une balle dans la tête, puis nettoie la scène de crime à la perfection',
         image: './assets/images/pistolet.jpg',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     transport2: {
-        titre: 'moyen de transport',
+        titre: 'Moyen de transport',
         description: 'Après toutes ses aventures, vous vous interrogez sur le choix du moyen de transport pour aller à l\'école.',
         image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
-            {titre: 'autobus', destination: 'continuer2'}, 
+            {titre: 'Autobus', destination: 'continuer2'}, 
           
-            {titre: 'marche', destination: 'lenteur'} 
+            {titre: 'Marche', destination: 'lenteur'} 
         ]
     },
     continuer2: {
-        titre: 'continuer?',
+        titre: 'Continuer?',
         description: 'L\'autobus arrive dans 10 minutes, mais vous pourriez arriver plus vite en marchant. Cependant, c\'est un gros risque à prendre compte tenu du temps qu\'il vous reste.',
         image: './assets/images/continuer.jpeg',
         boutons : [ 
-            {titre: 'oui', destination: 'retard'}, 
+            {titre: 'Oui', destination: 'retard'}, 
           
-            {titre: 'marcher à la place', destination: 'lenteur'} 
+            {titre: 'Marcher à la place', destination: 'lenteur'} 
         ]
     },
     retard: {
@@ -124,51 +124,51 @@ const chapters = {
         description: 'Vous arrivez en retard, les portes des classes se ferment. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     vitesse: {
-        titre: 'a quelle vitesse',
+        titre: 'À quelle vitesse',
         description: 'Vous avez décidé de marcher, mais à quelle vitesse ?',
         image: './assets/images/vitesse.jpg',
         boutons : [ 
-            {titre: 'marcher', destination: 'lenteur'}, 
+            {titre: 'Marcher', destination: 'lenteur'}, 
           
-            {titre: 'courir', destination: 'manger'} 
+            {titre: 'Courir', destination: 'manger'} 
         ]
     },
     lenteur:{
-        titre: 'vous etes trop lent',
+        titre: 'Vous êtes trop lent',
         description: 'Vous êtes trop lent, vous arrivez en retard, les portes des classes se sont fermées. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
     manger: {
-        titre: 'avez vous manger?',
+        titre: 'Avez vous manger?',
         description: 'Pour courir, il faut avoir de l\'énergie.',
         image: './assets/images/manger.png',
         boutons : [ 
-            {titre: 'non', destination: 'pasdenergie'}, 
+            {titre: 'Non', destination: 'pasdenergie'}, 
           
-            {titre: 'oui', destination: 'therock'} 
+            {titre: 'Oui', destination: 'therock'} 
         ]
     },
     therock: {
-        titre: 'pourquoi mentez vous?',
+        titre: 'Pourquoi mentez vous?',
         description: 'Vous n\'avez pas déjeuné ! Ne faites pas semblant.',
         image: './assets/images/therock.jpg',
         boutons : [ 
-            {titre: 'continuer', destination: 'pasdenergie'} 
+            {titre: 'Continuer', destination: 'pasdenergie'} 
         ]  
     },
     pasdenergie: {
-        titre: 'vous avez pas denergie',
+        titre: 'Vous avez pas denergie',
         description: 'Vous n\'avez pas mangé, ce qui fait que vous n\'avez aucune énergie pour courir, donc vous arrivez en retard.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} 
         ]
     },
      
