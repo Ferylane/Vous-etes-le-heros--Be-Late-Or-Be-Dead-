@@ -181,21 +181,15 @@ const chapters = {
 const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
+
 const audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
 audioTrameS.volume = 0.25;
-const audioMario = document.querySelector('#mario');
+
+const audioLose = document.querySelector('#audioLose');
 const audioBoutton = document.querySelector('#audioBoutton');
 const audioSus = document.querySelector('#audioSus');
 const audioWin = document.querySelector('#audioWin');
-
-
-
-
-
-
-
-
 
 
 function goToChapter(chapter) {
