@@ -79,7 +79,8 @@ const chapters = {
         image: './assets/images/cave.jpg',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audio : './assets/audio/price-of-freedom-33106.mp3'
     },
     velo: {
         titre: 'Rencontre innatendue 2',
@@ -97,7 +98,8 @@ const chapters = {
         image: './assets/images/pistolet.jpg',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audio : './assets/audio/price-of-freedom-33106.mp3'
     },
     transport2: {
         titre: 'Moyen de transport',
@@ -125,7 +127,8 @@ const chapters = {
         image: './assets/images/retard.webp',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audio : './assets/audio/price-of-freedom-33106.mp3'
     },
     vitesse: {
         titre: 'À quelle vitesse',
@@ -143,7 +146,8 @@ const chapters = {
         image: './assets/images/retard.webp',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audio : './assets/audio/price-of-freedom-33106.mp3'
     },
     manger: {
         titre: 'Avez vous manger?',
@@ -170,13 +174,15 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'},
         ],
-        audio :
+        audio : './assets/audio/price-of-freedom-33106.mp3'
     },
      
 };
 const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
+const audio = document.querySelector('#trameSonore');
+audio.play();
 
 
 function goToChapter(chapter) {
@@ -185,6 +191,10 @@ function goToChapter(chapter) {
         textN.textContent = (chapters[chapter].description);
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
+        if(chapter.audio !== ''){
+            audio.src = chapter.audio;
+            audio.play();
+        }
     
         // Sélectionne le div .boutons 
 
@@ -213,8 +223,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     };
 };
 
-const audio = document.querySelector('#trameSonore');
-audio.play();
+
 
 
 
