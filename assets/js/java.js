@@ -168,8 +168,9 @@ const chapters = {
         description: 'Vous n\'avez pas mangé, ce qui fait que vous n\'avez aucune énergie pour courir, donc vous arrivez en retard.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+            {titre: 'Recommencer', destination: 'reveil'},
+        ],
+        audio :
     },
      
 };
@@ -177,12 +178,14 @@ const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
 
+
 function goToChapter(chapter) {
     if (chapters[chapter] !== undefined){ 
         titreN.textContent = (chapters[chapter].titre);
         textN.textContent = (chapters[chapter].description);
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
+    
         // Sélectionne le div .boutons 
 
 const boutons = document.querySelector('.boutons'); 
@@ -209,5 +212,10 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
         console.log('Mauvaise clé.');
     };
 };
+
+const audio = document.querySelector('#trameSonore');
+audio.play();
+
+
 
 goToChapter('reveil');
