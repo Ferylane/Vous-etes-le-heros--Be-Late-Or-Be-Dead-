@@ -80,7 +80,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/price-of-freedom-33106.mp3'
+        audio : './assets/audio/mario-scream-sound-effect.mp3'
     },
     velo: {
         titre: 'Rencontre innatendue 2',
@@ -99,7 +99,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/price-of-freedom-33106.mp3'
+        audio : './assets/audio/mario-scream-sound-effect.mp3'
     },
     transport2: {
         titre: 'Moyen de transport',
@@ -128,7 +128,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/price-of-freedom-33106.mp3'
+        audio : './assets/audio/mario-scream-sound-effect.mp3'
     },
     vitesse: {
         titre: 'À quelle vitesse',
@@ -147,7 +147,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/price-of-freedom-33106.mp3'
+        audio : './assets/audio/mario-scream-sound-effect.mp3'
     },
     manger: {
         titre: 'Avez vous manger?',
@@ -174,15 +174,28 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'},
         ],
-        audio : './assets/audio/price-of-freedom-33106.mp3'
+        audio : './assets/audio/mario-scream-sound-effect.mp3'
     },
      
 };
 const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
-const audio = document.querySelector('#trameSonore');
-audio.play();
+const audioTrameS = document.querySelector('#trameSonore');
+audioTrameS.play();
+audioTrameS.volume = 0.25;
+const audioMario = document.querySelector('#mario');
+const audioBoutton = document.querySelector('#audioBoutton');
+const audioSus = document.querySelector('#audioSus');
+const audioWin = document.querySelector('#audioWin');
+
+
+
+
+
+
+
+
 
 
 function goToChapter(chapter) {
@@ -191,12 +204,7 @@ function goToChapter(chapter) {
         textN.textContent = (chapters[chapter].description);
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
-        if(chapter.audio !== ''){
-            audio.src = chapter.audio;
-            audio.play();
-        }
-    
-        // Sélectionne le div .boutons 
+                   // Sélectionne le div .boutons 
 
 const boutons = document.querySelector('.boutons'); 
 // Supprime tous les boutons enfants du div .boutons 
@@ -221,10 +229,6 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     else {
         console.log('Mauvaise clé.');
     };
-};
-
-
-
-
-
+}
 goToChapter('reveil');
+
