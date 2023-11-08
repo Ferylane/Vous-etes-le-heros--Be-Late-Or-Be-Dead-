@@ -168,7 +168,7 @@ const chapters = {
         ]  
     },
     pasdenergie: {
-        titre: 'Vous avez pas denergie',
+        titre: 'Vous avez pas d\'énergie',
         description: 'Vous n\'avez pas mangé, ce qui fait que vous n\'avez aucune énergie pour courir, donc vous arrivez en retard.',
         image: './assets/images/retard.webp',
         boutons : [ 
