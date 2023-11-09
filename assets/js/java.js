@@ -191,7 +191,7 @@ audioTrameS.play();
 audioTrameS.volume = 0.25;
 
 
-const audioBoutton = document.querySelector('#audioBoutton');
+
 
 
 
@@ -232,6 +232,10 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     // la destination, c'est la destination du bouton! 
     goToChapter(chapters[chapter].boutons[i].destination) 
   }); 
+  boutons.addEventListener('click', function(){
+    const audioBoutton = document.querySelector('#audioBoutton');
+    audioBoutton.play();
+  })
   // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
   boutons.appendChild(nouveauBtn); 
 }; 
