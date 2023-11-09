@@ -63,7 +63,7 @@ body {
     font-family:'Merriweather' ;
 }
 
-img {
+img, video {
     position: absolute;
     bottom: 110px;
     display: flex;
@@ -72,7 +72,9 @@ img {
     margin-right: 50px;
     width: 500px;
     height: 300px;
+    border: solid 3px black;
 }
+
   @font-face {
     src: url("../polices/Road_Rage.otf") format("opentype");
     font-family: "Road Rage";

@@ -164,10 +164,11 @@ const chapters = {
     therock: {
         titre: 'Pourquoi mentez vous?',
         description: 'Vous n\'avez pas déjeuné ! Ne faites pas semblant.',
-        image: './assets/images/therock.jpg',
+        image : './assets/images/therock.jpg',
         boutons : [ 
             {titre: 'Continuer', destination: 'pasdenergie'} 
-        ]  
+        ],
+        audioSus : './assets/audio/among-us-role-reveal-sound.mp3'  
     },
     pasdenergie: {
         titre: 'Vous avez pas d\'énergie',
@@ -184,13 +185,14 @@ const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
 
+
 const audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
 audioTrameS.volume = 0.25;
 
 
 const audioBoutton = document.querySelector('#audioBoutton');
-const audioSus = document.querySelector('#audioSus');
+
 
 
 
@@ -208,6 +210,9 @@ function goToChapter(chapter) {
             const audioWin = document.querySelector('#audioWin');
             audioWin.play();
             audioWin.volume = 0.5;
+        }if(chapters[chapter].audioSus){
+            const audioSus = document.querySelector('#audioSus');
+            audioSus.play();
         }
                    // Sélectionne le div .boutons 
 
