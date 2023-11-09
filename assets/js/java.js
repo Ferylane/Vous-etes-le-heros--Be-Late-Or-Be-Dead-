@@ -235,6 +235,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
   boutons.addEventListener('click', function(){
     const audioBoutton = document.querySelector('#audioBoutton');
     audioBoutton.play();
+    audioBoutton.volume = 0.10;
   })
   // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
   boutons.appendChild(nouveauBtn); 
