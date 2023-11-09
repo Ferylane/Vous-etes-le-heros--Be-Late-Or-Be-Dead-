@@ -53,7 +53,8 @@ const chapters = {
         image: './assets/images/einstein.jpg',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audioWin : './y2mate_HrgsElu.mp3'
     },
     enfant: {
         titre: 'Toute mes félicitations',
@@ -61,7 +62,8 @@ const chapters = {
         image: './assets/images/enfants.jpg',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
-        ]
+        ],
+        audioWin : './y2mate_HrgsElu.mp3'
     },
     voiture: {
         titre: 'Rencontre innatendue',
@@ -80,7 +82,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/mario-scream-sound-effect.mp3'
+        audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
     velo: {
         titre: 'Rencontre innatendue 2',
@@ -99,7 +101,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/mario-scream-sound-effect.mp3'
+        audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
     transport2: {
         titre: 'Moyen de transport',
@@ -128,7 +130,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/mario-scream-sound-effect.mp3'
+        audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
     vitesse: {
         titre: 'À quelle vitesse',
@@ -147,7 +149,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'} 
         ],
-        audio : './assets/audio/mario-scream-sound-effect.mp3'
+        audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
     manger: {
         titre: 'Avez vous manger?',
@@ -174,7 +176,7 @@ const chapters = {
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'},
         ],
-        audio : './assets/audio/mario-scream-sound-effect.mp3'
+        audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
      
 };
@@ -186,10 +188,10 @@ const audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
 audioTrameS.volume = 0.25;
 
-const audioLose = document.querySelector('#audioLose');
+
 const audioBoutton = document.querySelector('#audioBoutton');
 const audioSus = document.querySelector('#audioSus');
-const audioWin = document.querySelector('#audioWin');
+
 
 
 function goToChapter(chapter) {
@@ -198,6 +200,15 @@ function goToChapter(chapter) {
         textN.textContent = (chapters[chapter].description);
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
+        if(chapters[chapter].audioLose){
+            const audioLose = document.querySelector('#audioLose');
+            audioLose.play();
+            audioLose.volume = 0.10;
+        }if(chapters[chapter].audioWin){
+            const audioWin = document.querySelector('#audioWin');
+            audioWin.play();
+            audioWin.volume = 0.5;
+        }
                    // Sélectionne le div .boutons 
 
 const boutons = document.querySelector('.boutons'); 
@@ -224,5 +235,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
         console.log('Mauvaise clé.');
     };
 }
+
+
 goToChapter('reveil');
 
