@@ -190,12 +190,6 @@ const audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
 audioTrameS.volume = 0.25;
 
-
-
-
-
-
-
 function goToChapter(chapter) {
     if (chapters[chapter] !== undefined){ 
         titreN.textContent = (chapters[chapter].titre);
@@ -213,6 +207,9 @@ function goToChapter(chapter) {
         }if(chapters[chapter].audioSus){
             const audioSus = document.querySelector('#audioSus');
             audioSus.play();
+        }if(chapter === 'therock'){
+            const video = document.querySelector('.video');
+            video.play()
         }
                    // Sélectionne le div .boutons 
 
@@ -235,7 +232,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
   boutons.addEventListener('click', function(){
     const audioBoutton = document.querySelector('#audioBoutton');
     audioBoutton.play();
-    audioBoutton.volume = 0.10;
+    audioBoutton.volume = 0.05;
   })
   // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
   boutons.appendChild(nouveauBtn); 
