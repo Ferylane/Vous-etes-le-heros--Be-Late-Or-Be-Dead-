@@ -13,6 +13,8 @@ const chapters = {
         image: './assets/images/dejeuner.jpg',
         boutons : [ 
             {titre: 'Oui', destination: 'voiture'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Non', destination: 'transport'} 
         ]
@@ -23,6 +25,8 @@ const chapters = {
         image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
             {titre: 'Marcher', destination: 'vitesse'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Autobus', destination: 'continuer'} 
         ]
@@ -32,7 +36,9 @@ const chapters = {
         description: 'L\'autobus arrive dans 15 minutes, mais vous pourriez arriver plus vite en marchant. Cependant, c\'est un gros risque à prendre.',
         image: './assets/images/continuer.jpeg',
         boutons : [ 
-            {titre: 'Marcher a la place', destination: 'vitesse'}, 
+            {titre: 'Marcher a la place', destination: 'vitesse'},
+            
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Oui', destination: 'appel'} 
         ]
@@ -43,6 +49,8 @@ const chapters = {
         image: './assets/images/appel.jpeg',
         boutons : [ 
             {titre: 'Répondre', destination: 'enfant'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Pas répondre', destination: 'einstein'} 
         ]
@@ -71,6 +79,8 @@ const chapters = {
         image: './assets/images/voiture.jpg',
         boutons : [ 
             {titre: 'Oui', destination: 'cave'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Non', destination: 'velo'} 
         ]
@@ -90,6 +100,8 @@ const chapters = {
         image: './assets/images/velo.jpg',
         boutons : [ 
             {titre: 'Oui', destination: 'pistolet'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Non', destination: 'transport2'} 
         ]
@@ -109,6 +121,8 @@ const chapters = {
         image: './assets/images/autobus_ou_marcher.jpg',
         boutons : [ 
             {titre: 'Autobus', destination: 'continuer2'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Marche', destination: 'lenteur'} 
         ]
@@ -119,6 +133,8 @@ const chapters = {
         image: './assets/images/continuer.jpeg',
         boutons : [ 
             {titre: 'Oui', destination: 'retard'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Marcher à la place', destination: 'lenteur'} 
         ]
@@ -138,6 +154,8 @@ const chapters = {
         image: './assets/images/vitesse.jpg',
         boutons : [ 
             {titre: 'Marcher', destination: 'lenteur'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Courir', destination: 'manger'} 
         ]
@@ -157,6 +175,8 @@ const chapters = {
         image: './assets/images/manger.png',
         boutons : [ 
             {titre: 'Non', destination: 'pasdenergie'}, 
+
+            {titre: 'Réinitialiser', destination: 'reveil'},
           
             {titre: 'Oui', destination: 'therock'} 
         ]
@@ -168,7 +188,8 @@ const chapters = {
         boutons : [ 
             {titre: 'Continuer', destination: 'pasdenergie'} 
         ],
-        audioSus : './assets/audio/among-us-role-reveal-sound.mp3'  
+        audioSus : './assets/audio/among-us-role-reveal-sound.mp3',
+        video : './assets/video/the-rock.mov'
     },
     pasdenergie: {
         titre: 'Vous avez pas d\'énergie',
@@ -184,6 +205,9 @@ const chapters = {
 const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
+const jeu = document.querySelector('#jeu');
+const video = document.createElement('video');
+
 
 
 const audioTrameS = document.querySelector('#trameSonore');
@@ -200,16 +224,30 @@ function goToChapter(chapter) {
             const audioLose = document.querySelector('#audioLose');
             audioLose.play();
             audioLose.volume = 0.10;
-        }if(chapters[chapter].audioWin){
+        }else{
+            audioLose.pause()
+        }
+        if(chapters[chapter].audioWin){
             const audioWin = document.querySelector('#audioWin');
             audioWin.play();
             audioWin.volume = 0.5;
-        }if(chapters[chapter].audioSus){
+        }else{
+            audioWin.pause()
+        }
+        if(chapters[chapter].audioSus){
             const audioSus = document.querySelector('#audioSus');
             audioSus.play();
-        }if(chapter === 'therock'){
-            const video = document.querySelector('.video');
+            audioSus.currentTime = 0;
+        }else{
+            audioSus.pause()
+        }
+        if(chapters[chapter].video){
+            const video = document.querySelector('video');
+            video.classList.remove('videoHidden');
             video.play()
+            video.currentTime = 0;
+        }else{
+            video.classList.add('videoHidden');
         }
                    // Sélectionne le div .boutons 
 

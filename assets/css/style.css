@@ -63,7 +63,7 @@ body {
     font-family:'Merriweather' ;
 }
 
-img, video {
+img  {
     position: absolute;
     bottom: 110px;
     display: flex;
@@ -73,6 +73,25 @@ img, video {
     width: 500px;
     height: 300px;
     border: solid 3px black;
+}
+
+video{
+    position: absolute;
+    bottom: 110px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 502px;
+    height: 300px;
+}
+
+.videoHidden{
+    display: none;
+}
+
+.imgHidden{
+    display: none;
 }
 
   @font-face {
