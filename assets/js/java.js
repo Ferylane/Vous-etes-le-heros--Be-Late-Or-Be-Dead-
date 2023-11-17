@@ -62,6 +62,7 @@ const chapters = {
         image: './assets/images/einstein.jpg',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'},
+            {titre: 'Réinitialiser', destination: 'reveil'},
             
         ],
         audioWin : './y2mate_HrgsElu.mp3'
