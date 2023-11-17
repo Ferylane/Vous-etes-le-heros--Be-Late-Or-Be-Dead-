@@ -235,22 +235,27 @@ function goToChapter(chapter) {
             const audioLose = document.querySelector('#audioLose');
             audioLose.play();
             audioLose.volume = 0.10;
+            audioLose.currentTime = 0;
         }else{
-            audioLose.pause()
+            audioLose.pause();
+            audioLose.currentTime = 0;
         }
         if(chapters[chapter].audioWin){
             const audioWin = document.querySelector('#audioWin');
             audioWin.play();
             audioWin.volume = 0.5;
+            audioWin.currentTime = 0;
         }else{
-            audioWin.pause()
+            audioWin.pause();
+            audioWin.currentTime = 0;
         }
         if(chapters[chapter].audioSus){
             const audioSus = document.querySelector('#audioSus');
             audioSus.play();
             audioSus.currentTime = 0;
         }else{
-            audioSus.pause()
+            audioSus.pause();
+            audioSus.currentTime = 0;
         }
        
                    // Sélectionne le div .boutons 
