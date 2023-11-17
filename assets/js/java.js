@@ -293,6 +293,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     }else{
         video.classList.add('videoHidden');
         imgN.classList.remove('imgHidden');
+        video.pause();
         
         
     }
