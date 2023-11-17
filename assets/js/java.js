@@ -4,7 +4,8 @@ const chapters = {
         description:'Vous vous réveillez un beau matin, mais vous réalisez que vous avez bien dormi, ce qui n\'est pas normal un jour d\'école. Ensuite, vous regardez l\'heure et remarquez que vous êtes en retard.',
         image: './assets/images/reveil.jpg',
         boutons : [ 
-            {titre: 'Continuer', destination: 'dejeuner'} 
+            {titre: 'Continuer', destination: 'dejeuner'},
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ]
     },
     dejeuner: {
@@ -60,7 +61,8 @@ const chapters = {
         description: 'Vous n\'avez pas répondu, ce qui vous a permis de franchir les portes de l\'école. Grâce à cette action, dans le futur, vous devenez le prochain Albert Einstein de notre génération',
         image: './assets/images/einstein.jpg',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'},
+            
         ],
         audioWin : './y2mate_HrgsElu.mp3'
     },
@@ -69,7 +71,8 @@ const chapters = {
         description: 'Vous avez répondu à l\'appel et votre ami vous a déclaré sa flamme. Ensuite, vous avez eu des enfants et avez vécu heureux jusqu\'à la fin de vos jours.',
         image: './assets/images/enfants.jpg',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'},
+            {titre: 'Réinitialiser', destination: 'reveil'}, 
         ],
         audioWin : './y2mate_HrgsElu.mp3'
     },
@@ -90,7 +93,8 @@ const chapters = {
         description: 'Vous retrouvez ses clés et pour vous remercier, il vous dit qu\'il va vous amener à l\'école. Cependant, il vous conduit dans une cave où il mène des expériences sur des humains et vous finissez par mourir.',
         image: './assets/images/cave.jpg',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'},
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
@@ -111,7 +115,8 @@ const chapters = {
         description: 'La petite fille était une espionne russe. Elle sort un pistolet silencieux et vous tire une balle dans la tête, puis nettoie la scène de crime à la perfection',
         image: './assets/images/pistolet.jpg',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'},
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
@@ -144,7 +149,8 @@ const chapters = {
         description: 'Vous arrivez en retard, les portes des classes se ferment. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} ,
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
@@ -165,7 +171,8 @@ const chapters = {
         description: 'Vous êtes trop lent, vous arrivez en retard, les portes des classes se sont fermées. Les portes des classes restent ouvertes 20 minutes après le début du cours, mais vous êtes arrivé après.',
         image: './assets/images/retard.webp',
         boutons : [ 
-            {titre: 'Recommencer', destination: 'reveil'} 
+            {titre: 'Recommencer', destination: 'reveil'} ,
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
@@ -186,7 +193,8 @@ const chapters = {
         description: 'Vous n\'avez pas déjeuné ! Ne faites pas semblant.',
         image : './assets/images/therock.jpg',
         boutons : [ 
-            {titre: 'Continuer', destination: 'pasdenergie'} 
+            {titre: 'Continuer', destination: 'pasdenergie'} ,
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioSus : './assets/audio/among-us-role-reveal-sound.mp3',
         video : './assets/video/the-rock.mov'
@@ -197,6 +205,7 @@ const chapters = {
         image: './assets/images/retard.webp',
         boutons : [ 
             {titre: 'Recommencer', destination: 'reveil'},
+            {titre: 'Réinitialiser', destination: 'reveil'},
         ],
         audioLose : './assets/audio/mario-scream-sound-effect.mp3'
     },
@@ -206,7 +215,9 @@ const titreN = document.querySelector('.titre');
 const textN = document.querySelector('.text');
 const imgN = document.querySelector('.img');
 const jeu = document.querySelector('#jeu');
-const video = document.createElement('video');
+const divVideo = document.querySelector('.divVideo');
+const video = document.querySelector('video');
+
 
 
 
@@ -241,14 +252,7 @@ function goToChapter(chapter) {
         }else{
             audioSus.pause()
         }
-        if(chapters[chapter].video){
-            const video = document.querySelector('video');
-            video.classList.remove('videoHidden');
-            video.play()
-            video.currentTime = 0;
-        }else{
-            video.classList.add('videoHidden');
-        }
+       
                    // Sélectionne le div .boutons 
 
 const boutons = document.querySelector('.boutons'); 
@@ -279,8 +283,27 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     else {
         console.log('Mauvaise clé.');
     };
+    
+    if(chapters[chapter].video){
+       
+        video.classList.remove('videoHidden');
+        imgN.classList.add('imgHidden');
+        video.play()
+        video.currentTime = 0;
+    }else{
+        video.classList.add('videoHidden');
+        imgN.classList.remove('imgHidden');
+        
+        
+    }
+    localStorage.setItem('save', chapter);
+    console.log(localStorage.getItem('save'));
+    
 }
 
-
-goToChapter('reveil');
+if(localStorage.getItem('save')){
+    goToChapter(localStorage.getItem('save'));
+}else{
+    goToChapter('reveil');
+}
 
