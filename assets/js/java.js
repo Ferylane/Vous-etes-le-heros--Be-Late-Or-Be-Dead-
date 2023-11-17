@@ -220,10 +220,9 @@ const video = document.querySelector('video');
 
 
 
-
 const audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
-audioTrameS.volume = 0.25;
+audioTrameS.volume = 0.10;
 
 function goToChapter(chapter) {
     if (chapters[chapter] !== undefined){ 
