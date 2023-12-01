@@ -7,28 +7,25 @@ html{
     background-color:#EB1414;
 }
 
-body {
+body{
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-}
-
-#jeu{
-    position: absolute;
-    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
+}
+
+
+
+#jeu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color:#882727 ;
     width:600px;
     height: 630px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 0 300px;
     border-radius: 20px;
 }
@@ -64,8 +61,6 @@ body {
 }
 
 img  {
-    position: absolute;
-    bottom: 110px;
     display: flex;
     justify-content: center;
     margin-left: 50px;
@@ -76,8 +71,6 @@ img  {
 }
 
 video{
-    position: absolute;
-    bottom: 110px;
     display: flex;
     justify-content: center;
     margin-left: 50px;
@@ -196,8 +189,10 @@ video{
 }
 
 .boutons{
-    position: absolute;
-    bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -235,7 +230,7 @@ button:hover{
     
 }
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 588px) {
     .boutons{
         justify-content: space-evenly;
     }
