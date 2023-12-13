@@ -218,10 +218,11 @@ const imgN = document.querySelector('.img');
 const jeu = document.querySelector('#jeu');
 const divVideo = document.querySelector('.divVideo');
 const video = document.querySelector('video');
+let mute = document.querySelector('#mute');
 
 
 
-const audioTrameS = document.querySelector('#trameSonore');
+let audioTrameS = document.querySelector('#trameSonore');
 audioTrameS.play();
 audioTrameS.volume = 0.10;
 
@@ -231,6 +232,7 @@ function goToChapter(chapter) {
         textN.textContent = (chapters[chapter].description);
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
+        
         if(chapters[chapter].audioLose){
             const audioLose = document.querySelector('#audioLose');
             audioLose.play();
@@ -243,7 +245,7 @@ function goToChapter(chapter) {
         if(chapters[chapter].audioWin){
             const audioWin = document.querySelector('#audioWin');
             audioWin.play();
-            audioWin.volume = 0.5;
+            audioWin.volume = 0.25;
             audioWin.currentTime = 0;
         }else{
             audioWin.pause();
@@ -257,6 +259,22 @@ function goToChapter(chapter) {
             audioSus.pause();
             audioSus.currentTime = 0;
         }
+        mute.addEventListener('change', function(){
+            if (mute.checked == true){
+                audioTrameS.volume = 0;
+                audioBoutton.volume = 0;
+                audioLose.volume = 0;
+                audioWin.volume = 0;
+                audioSus.volume = 0;
+                Audio.volume = 0;
+            }if(mute.checked != true){
+                audioTrameS.volume = 0.10;
+                audioBoutton.volume = 0.05;
+                audioLose.volume = 0.10;
+                audioWin.volume = 0.25;
+                audioSus.volume = 1;
+            }
+        })
        
                    // Sélectionne le div .boutons 
 
@@ -280,7 +298,11 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     const audioBoutton = document.querySelector('#audioBoutton');
     audioBoutton.play();
     audioBoutton.volume = 0.05;
-  })
+  });
+
+
+
+  
   // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
   boutons.appendChild(nouveauBtn); 
 }; 
@@ -304,6 +326,8 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     }
     localStorage.setItem('save', chapter);
     console.log(localStorage.getItem('save'));
+
+    
     
 }
 
@@ -312,4 +336,8 @@ if(localStorage.getItem('save')){
 }else{
     goToChapter('reveil');
 }
+
+
+
+
 
