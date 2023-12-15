@@ -294,7 +294,7 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     goToChapter(chapters[chapter].boutons[i].destination) 
   }); 
   boutons.addEventListener('click', function(){
-    const audioBoutton = document.querySelector('#audioBoutton');
+    let audioBoutton = document.querySelector('#audioBoutton');
     audioBoutton.play();
     audioBoutton.volume = 0.05;
   });
