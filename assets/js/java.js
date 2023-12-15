@@ -233,6 +233,7 @@ function goToChapter(chapter) {
         imgN.src = (chapters[chapter].image);
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         
+        
         if(chapters[chapter].audioLose){
             let audioLose = document.querySelector('#audioLose');
             audioLose.play();
@@ -258,22 +259,21 @@ function goToChapter(chapter) {
         }else{
             audioSus.pause();
             audioSus.currentTime = 0;
+        };
+        if (mute.checked == true){
+            audioTrameS.volume = 0;
+            audioBoutton.volume = 0;
+            audioLose.volume = 0;
+            audioWin.volume = 0;
+            audioSus.volume = 0;
+        }if(mute.checked != true){
+            audioTrameS.volume = 0.10;
+            audioBoutton.volume = 0.05;
+            audioLose.volume = 0.10;
+            audioWin.volume = 0.25;
+            audioSus.volume = 1;
         }
-        mute.addEventListener('change', function(){
-            if (mute.checked == true){
-                audioTrameS.volume = 0;
-                audioBoutton.pause();
-                audioLose.volume = 0;
-                audioWin.volume = 0;
-                audioSus.volume = 0;
-            }if(mute.checked != true){
-                audioTrameS.volume = 0.10;
-                audioBoutton.volume = 0.05;
-                audioLose.volume = 0.10;
-                audioWin.volume = 0.25;
-                audioSus.volume = 1;
-            }
-        })
+        
        
                    // Sélectionne le div .boutons 
 
@@ -297,7 +297,28 @@ for (let i = 0; i < chapters[chapter].boutons.length; i++) {
     let audioBoutton = document.querySelector('#audioBoutton');
     audioBoutton.play();
     audioBoutton.volume = 0.05;
+    if(mute.checked == true){
+        audioBoutton.volume = 0;
+    }
   });
+
+  let audioBoutton = document.querySelector('#audioBoutton');
+
+  mute.addEventListener('change', function(){
+    if (mute.checked == true){
+        audioTrameS.volume = 0;
+        audioBoutton.volume = 0;
+        audioLose.volume = 0;
+        audioWin.volume = 0;
+        audioSus.volume = 0;
+    }if(mute.checked != true){
+        audioTrameS.volume = 0.10;
+        audioBoutton.volume = 0.05;
+        audioLose.volume = 0.10;
+        audioWin.volume = 0.25;
+        audioSus.volume = 1;
+    }
+})
 
 
 
