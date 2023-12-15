@@ -234,7 +234,7 @@ function goToChapter(chapter) {
         console.log(`${chapters[chapter].titre} \n ${chapters[chapter].description}`);
         
         if(chapters[chapter].audioLose){
-            const audioLose = document.querySelector('#audioLose');
+            let audioLose = document.querySelector('#audioLose');
             audioLose.play();
             audioLose.volume = 0.10;
             audioLose.currentTime = 0;
@@ -243,7 +243,7 @@ function goToChapter(chapter) {
             audioLose.currentTime = 0;
         }
         if(chapters[chapter].audioWin){
-            const audioWin = document.querySelector('#audioWin');
+            let audioWin = document.querySelector('#audioWin');
             audioWin.play();
             audioWin.volume = 0.25;
             audioWin.currentTime = 0;
@@ -252,7 +252,7 @@ function goToChapter(chapter) {
             audioWin.currentTime = 0;
         }
         if(chapters[chapter].audioSus){
-            const audioSus = document.querySelector('#audioSus');
+            let audioSus = document.querySelector('#audioSus');
             audioSus.play();
             audioSus.currentTime = 0;
         }else{
@@ -266,7 +266,6 @@ function goToChapter(chapter) {
                 audioLose.volume = 0;
                 audioWin.volume = 0;
                 audioSus.volume = 0;
-                Audio.volume = 0;
             }if(mute.checked != true){
                 audioTrameS.volume = 0.10;
                 audioBoutton.volume = 0.05;
