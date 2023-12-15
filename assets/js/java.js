@@ -262,7 +262,7 @@ function goToChapter(chapter) {
         mute.addEventListener('change', function(){
             if (mute.checked == true){
                 audioTrameS.volume = 0;
-                audioBoutton.volume = 0;
+                audioBoutton.pause();
                 audioLose.volume = 0;
                 audioWin.volume = 0;
                 audioSus.volume = 0;
